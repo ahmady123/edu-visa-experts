@@ -360,6 +360,7 @@ color: #da1212;
   overflow-x: hidden;
   gap: 15px;
   margin-top: 20px;
+  z-index: 99999;
 }
 
 .btn {
@@ -477,7 +478,7 @@ section {
   width: 100%;
 overflow-x: hidden;
   position: absolute;
-
+margin-top: 100px;
   left: 0;
   opacity: 0;
   transform: translateY(20px);
@@ -520,7 +521,7 @@ section:nth-child(3) {
 .custom-container {
   max-width: 100%;
   margin: 0 auto;
-margin-top: 550px;
+margin-top: 620px;
 }
 
 .parent {
