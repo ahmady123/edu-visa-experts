@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Visa Interviews: Dos and Don’ts for International Student</title>
+  <link rel="icon" href="logo-removebg-preview.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flag-icons/css/flag-icons.min.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light w-100">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+            <img src="logo-removebg-preview.png" alt="Logo" style="max-height: 80px;"> 
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="whyus.html">Why us</a>
+                </li>          
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle"  id="countriesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Countries
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="resourcesDropdown">
+                        <li><a class="dropdown-item" id="countriesDropdown" ><span class="fi fi-es"></span> Spain</a></li>
+                        <li><a class="dropdown-item" id="countriesDropdown" ><span class="fi fi-it"></span> Italy</a></li>
+                        <li><a class="dropdown-item" id="countriesDropdown" ><span class="fi fi-fr"></span> France</a></li>
+                        <li><a class="dropdown-item" id="countriesDropdown" ><span class="fi fi-at"></span> Austria</a></li>
+                        <li><a class="dropdown-item" id="countriesDropdown" ><span class="fi fi-hu"></span> Hungary</a></li>
+                        <li><a class="dropdown-item" id="countriesDropdown" ><span class="fi fi-lt"></span> Lithuania</a></li>
+                        
+           
+                      </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#blogs-section">Blogs</a>
+                    </li>
+                    <li class="nav-item">
+                      <button class="button" id="scrollToFooterButton"  onclick="window.location.href='index.html#footer'">
+                                    <div class="dots_border"></div>
+                                  
+                                    <span class="text_button">  <i class="fa-solid fa-phone hh"></i>   Contact Us</span>
+                                  </button>
+                                        </li>
+                </ul>
+              </div>
+              
+           
+    </div>
+</nav>
+<style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      font-family: 'Times New Roman';
+      overflow-x: hidden;
+    }
+    .navbar {
+      background: transparent;
+      font-family: Lora;
+      position: sticky !important;
+      top: 0 !important;
+      z-index: 1000;
+      width: 100%;
+      background-color: #ffffff;
+    }
+    .navbar-brand img {
+        max-height: 80px;
+        transition: transform 0.3s ease;
+    }
+
+    .navbar-brand img:hover {
+        transform: scale(1.1);
+    }
+
+
+    .navbar-nav .nav-link {
+        color: #000000 !important;
+        font-size: 1.1rem;
+        text-transform: uppercase;
+        font-weight: 500;
+        padding: 0.75rem 1rem;
+        transition: color 0.3s ease, transform 0.3s ease;
+    }
+
+    .nav-item.dropdown .dropdown-toggle {
+        color: #000000 !important;
+        font-size: 1.1rem;
+
+        text-transform: uppercase;
+        padding: 0.75rem 1rem;
+        transition: color 0.3s ease;
+    }
+
+    .dropdown-menu {
+        background: #fff;
+        border: none;
+        border-radius: 10px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.3s ease, visibility 0.3s ease;
+    }
+
+    .nav-item.dropdown:hover .dropdown-menu {
+        opacity: 1;
+        visibility: visible !important;
+    }
+
+
+    .dropdown-item {
+        padding: 0.75rem 1.25rem;
+        font-size: 1rem;
+        color: #333;
+        transition: background-color 0.3s ease, padding-left 0.3s ease;
+    }
+
+    .dropdown-item:hover {
+        background-color: #4CAF50;
+        padding-left: 1.5rem;
+        color: #fff;
+    }
+
+    .navbar.scrolled {
+        background: #ffffff !important;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    }
+
+    .button {
+    --black-700: hsla(0 0% 12% / 1);
+    --border_radius: 12px;
+    --transtion: 0.3s ease-in-out;
+    --offset: 2px;
+  
+    cursor: pointer;
+    position: absolute; 
+    right: 20px !important; 
+  
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  
+    padding: 0.75rem 2.1rem;  
+    background-color: transparent;
+  
+    border: none;
+    border-radius: var(--border_radius);
+  
+    transition: all var(--transtion);
+  }
+  
+  .button::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  
+    width: 100%;
+    height: 100%;
+    background-color: var(--black-700);
+  
+    border-radius: var(--border_radius);
+   
+    transition: all var(--transtion);
+    z-index: 0;
+  }
+  
+  .button::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  
+    width: 100%;
+    height: 100%;
+    background-color: hsla(0, 0%, 0%, 0.75); 
+    background-image: radial-gradient(
+        at 51% 89%,
+        hsla(207, 91%, 56%, 1) 0px,
+        transparent 50%
+      ),
+      radial-gradient(at 100% 100%, hsla(207, 85%, 55%, 1) 0px, transparent 50%),
+      radial-gradient(at 22% 91%, hsla(207, 85%, 55%, 1) 0px, transparent 50%);
+    background-position: top;
+  
+    opacity: var(--active, 0);
+    border-radius: var(--border_radius);
+    transition: opacity var(--transtion);
+    z-index: 1;
+  }
+  
+  .button:is(:hover, :focus-visible) {
+    --active: 1;
+  }
+  
+
+  .button .dots_border {
+    --size_border: calc(100% + 2px);
+  
+    overflow: hidden;
+  
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  
+    width: var(--size_border);
+    height: var(--size_border);
+    background-color: transparent;
+  
+    border-radius: var(--border_radius);
+    z-index: -10;
+  }
+  
+  .button .dots_border::before {
+    content: "";
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transform-origin: left;
+    transform: rotate(0deg);
+  
+    width: 100%;
+    height: 2rem;
+    background-color: white;
+  
+    mask: linear-gradient(transparent 0%, white 120%);
+    animation: rotate 2s linear infinite;
+  }
+  
+  @keyframes rotate {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .button .sparkle {
+    position: relative;
+    z-index: 10;
+  
+    width: 1.75rem;
+  }
+  
+  .button .sparkle .path {
+    fill: currentColor;
+    stroke: currentColor;
+  
+    transform-origin: center;
+  
+    color: hsl(0, 0%, 100%);
+  }
+  
+  .button:is(:hover, :focus) .sparkle .path {
+    animation: path 1.5s linear 0.5s infinite;
+  }
+  
+  .button .sparkle .path:nth-child(1) {
+    --scale_path_1: 1.2;
+  }
+  .button .sparkle .path:nth-child(2) {
+    --scale_path_2: 1.2;
+  }
+  .button .sparkle .path:nth-child(3) {
+    --scale_path_3: 1.2;
+  }
+  
+  @keyframes path {
+    0%,
+    34%,
+    71%,
+    100% {
+      transform: scale(1);
+    }
+    17% {
+      transform: scale(var(--scale_path_1, 1));
+    }
+    49% {
+      transform: scale(var(--scale_path_2, 1));
+    }
+    83% {
+      transform: scale(var(--scale_path_3, 1));
+    }
+  }
+
+
+
+
+  .navbar-nav{
+    z-index: 100000;
+  }
+  .button .text_button {
+    position: relative;
+    z-index: 10;
+  
+    background-image: linear-gradient(
+      90deg,
+      hsla(0 0% 100% / 1) 0%,
+      hsla(0 0% 100% / var(--active, 0)) 120%
+    );
+    background-clip: text;
+  
+    font-size: 0.875rem; 
+    color: transparent;
+  }
+@media(max-width: 991px){
+ 
+
+.navbar-collapse {
+  position: absolute;
+  top: 100%; 
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  overflow: hidden;
+  max-height: 0;
+  opacity: 0;
+  transform: scaleY(0); 
+  transform-origin: top;
+  transition: transform 0.3s ease, opacity 0.3s ease, max-height 0.3s ease;
+  z-index: 9999;
+}
+
+.navbar-collapse.show {
+  max-height: 500px; 
+  opacity: 1;
+  transform: scaleY(1); 
+}
+}
+@media (max-width: 991px) {
+      .button {
+          position: relative; 
+          right: auto;
+      
+      }
+  }
+  @media (max-width: 991px) {
+      .button {
+          position: relative; 
+          right: auto;
+      
+      }
+  }
+  @media (max-width: 991px) {
+    .button {
+      position: relative; 
+      right: auto; 
+      padding: 0;
+      background-color: transparent;
+      border: none;
+      box-shadow: none;
+      display: inline-flex; /* Keep inline alignment */
+      align-items: center; /* Center text and icon */
+      gap: 0.5rem; /* Maintain spacing between icon and text */
+    }
+  
+    .button::before, 
+    .button::after, 
+    .button .dots_border {
+      display: none; /* Hide decorative elements */
+    }
+  
+    .button .text_button {
+      background: none; /* Remove background gradient effect */
+
+      color: #000000 !important;
+      font-size: 1.1rem;
+  margin-left: 10px;
+      text-transform: uppercase;
+      z-index: 1; /* Ensure text is on top of any other elements */
+      position: relative; /* Prevent stacking issues */
+      opacity: 1; /* Ensure text is fully visible */
+    }
+  
+    .hh {
+      font-size: 1rem; /* Adjust icon size for better alignment */
+      color: black !important; /* Match icon color with text */
+    }
+  }
+</style>
+  <div class="container my-5">
+    <h1 class="text-center mb-4">Visa Interviews: Dos and Don’ts for International Student</h1>
+    <div class="text-center">
+      <img src="blog6.jpg" style="height: 500px; width: 1200px;" 
+           alt="Education Visa Guide" 
+           class="img-fluid mb-4">
+    </div>
+    <p>As an international student preparing to study abroad, one of the most important steps in the visa application process is the visa interview. This is where immigration officials will assess whether you're eligible for a student visa. It's essential to be well-prepared and approach the interview with the right mindset. Below are some key dos and don'ts to help you succeed in your visa interview.</p>
+
+    <h3>1. Dos: How to Prepare for Your Visa Interview</h3>
+    
+    <h4>Do: Be Honest and Transparent</h4>
+    <p>Honesty is crucial when it comes to visa interviews. Be truthful about your academic intentions, financial status, and your purpose for studying abroad. Lying or withholding information can lead to a visa denial.</p>
+  
+    <h4>Do: Be Clear About Your Study Plans</h4>
+    <p>Immigration officials want to understand your academic goals. Be prepared to explain why you chose your specific course and university, how it aligns with your career goals, and why studying abroad is important for your future.</p>
+  
+    <h4>Do: Gather Required Documents in Advance</h4>
+    <p>Ensure that you have all necessary documents with you for the interview. This typically includes your passport, visa application form, admission letter, financial proof, and any additional documents requested by the embassy. Having everything organized shows that you are responsible and serious about your plans.</p>
+  
+    <h4>Do: Dress Professionally</h4>
+    <p>First impressions matter. Dress in a professional manner, as it demonstrates respect for the process and shows that you are taking the interview seriously. Aim for business casual or formal attire, depending on the embassy's culture.</p>
+  
+    <h4>Do: Practice Common Interview Questions</h4>
+    <p>Prepare answers to common visa interview questions such as:</p>
+    <ul>
+      <li>Why do you want to study in [Country]?</li>
+      <li>What are your long-term career goals?</li>
+      <li>How will you finance your education?</li>
+      <li>Why did you choose this particular university/course?</li>
+    </ul>
+    <p>Having clear, concise answers will help you feel more confident during the interview.</p>
+  
+    <h3>2. Don’ts: Common Mistakes to Avoid</h3>
+  
+    <h4>Don’t: Be Unprepared</h4>
+    <p>Don’t show up to your interview without the required documents or without understanding the details of your study plans. Lack of preparation can create doubt in the mind of the interviewer and may lead to a visa rejection.</p>
+  
+    <h4>Don’t: Provide Inconsistent or Contradictory Information</h4>
+    <p>Ensure that your answers are consistent with the information in your application. If there are contradictions between what you say in the interview and your application, it can lead to suspicions about your intentions and eligibility.</p>
+  
+    <h4>Don’t: Be Overly Nervous or Defensive</h4>
+    <p>It’s natural to feel nervous, but try not to appear overly anxious or defensive. Stay calm, composed, and polite during the interview. If you don’t know the answer to a question, it’s better to say so than to guess or make up information.</p>
+  
+    <h4>Don’t: Give Vague or Unclear Answers</h4>
+    <p>Visa officers expect clear and well-thought-out answers. Avoid being vague or evasive. If you’re asked why you chose a particular program or university, explain your reasoning in detail. Lack of clarity can make it seem like you haven’t seriously thought about your decision.</p>
+  
+    <h4>Don’t: Lie About Your Financial Situation</h4>
+    <p>Be honest about how you plan to fund your education. Visa officers often check the authenticity of financial documents, and any discrepancies can raise red flags. Ensure that your financial proofs align with the visa application requirements.</p>
+  
+    <h3>3. Final Thoughts</h3>
+    <p>Your visa interview is an important step in the process of studying abroad. By preparing thoroughly, being honest, and staying confident, you can increase your chances of success. Remember that the visa officer’s goal is to ensure that you are genuinely planning to study and that you meet all the necessary criteria.</p>
+  
+    <p>If you are applying for a student visa to study in countries like France, Italy, Spain, Austria, or Hungary, we are here to help you navigate the visa application process and prepare for a successful interview. Contact us today to get started!</p>
+  
+   
+     
+ <br><br><br><br>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    window.onscroll = function() { changeNavbarColor() };
+
+function changeNavbarColor() {
+    var navbar = document.querySelector('.navbar');
+    
+    if (window.pageYOffset > 0) {
+        navbar.classList.add('scrolled');
+    } else {
+        navbar.classList.remove('scrolled'); 
+    }
+}
+
+  </script>
+</body>
+</html>

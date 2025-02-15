@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edu Visa Experts</title>
+    <link rel="icon" href="logo-removebg-preview.png">
+    <link rel="stylesheet" href="index1.css">
+    <link rel="preload" as="image" href="jhyt.webp">
+<link rel="preload" as="image" href="jhyt2.webp">
+<link rel="preload" as="image" href="banner-03.webp">
+<link rel="preload" as="image" href="jhytmob.webp">
+<link rel="preload" as="image" href="jhyt2mob.webp">
+<link rel="preload" as="image" href="banner-03mob.webp">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" />
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="logo-removebg-preview.png" alt="Logo" style="max-height: 80px;"> 
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="whyus.html">Why us</a>
+                    </li>          
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle"  id="countriesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Countries
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="resourcesDropdown">
+                            <li><a class="dropdown-item" id="countriesDropdown" ><span class="fi fi-es"></span> Spain</a></li>
+                            <li><a class="dropdown-item" id="countriesDropdown" ><span class="fi fi-it"></span> Italy</a></li>
+                            <li><a class="dropdown-item" id="countriesDropdown" ><span class="fi fi-fr"></span> France</a></li>
+                            <li><a class="dropdown-item" id="countriesDropdown" ><span class="fi fi-at"></span> Austria</a></li>
+                            <li><a class="dropdown-item" id="countriesDropdown" ><span class="fi fi-hu"></span> Hungary</a></li>
+                            <li><a class="dropdown-item" id="countriesDropdown" ><span class="fi fi-lt"></span> Lithuania</a></li>
+                            
+               
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#blogs-section">Blogs</a>
+                    </li>
+                    <li class="nav-item">
+<button class="button" id="scrollToFooterButton">
+                <div class="dots_border"></div>
+              
+                <span class="text_button">
+                  <i class="fa-solid fa-phone hh"></i> Contact Us
+                </span>
+                
+              </button>
+                    </li>
+                </ul>
+              </div>
+              
+              
+        </div>
+    </nav>
+
+    <div class="sections">
+ 
+    
+    <section class="section active" id="study-abroad-with-us" >
+        <h2>Study Abroad on 100% scholarship</h2>
+        <ul>
+            <li><strong>Personalized Guidance:</strong> We help you choose the best academic options in <strong>Spain, France, Italy, Austria, and Hungary</strong>.</li>
+            <li><strong>Document Preparation:</strong> Ensuring your documents meet university requirements.</li>
+
+        </ul>
+        <p>Trust us to make your study abroad journey seamless.</p>
+        <div class="button-container">
+          <button class="btn btn-learn-more" onclick="scrollToBlogs()">Learn More</button>
+            <button class="btn btn-our-working" onclick="scrollToWorkings()">Our Working</button>
+        </div>
+    </section>
+    <section class="section" id="visa-expertise">
+      <h2>Your Education Visa Experts</h2>
+      <p>
+          We simplify the education visa process, offering expert guidance to help you pursue higher studies abroad. Specializing in placements at prestigious universities in <strong>Spain, France, Italy, Austria, Hungary</strong>, and <strong>Lithuania</strong>, we ensure a smooth and stress-free experience.
+      </p><br>
+      <div class="button-container">
+        <button class="btn btn-learn-more" onclick="scrollToBlogs()">Learn More</button>
+          <button class="btn btn-our-working" onclick="scrollToWorkings()">Our Working</button>
+      </div><br><br>
+  </section>
+    <section class="section"  id="why-choose-us">
+        <h2>Why Choose Us?</h2>
+        <p>
+            With proven expertise and a client-first approach, we help you access world-class education in Europe at affordable rates. Let us guide you to top universities in <strong>Spain, France, Italy, Austria, Hungary</strong>, and <strong>Lithuania</strong>.
+        </p><br>
+        <div class="button-container">
+          <button class="btn btn-learn-more" onclick="scrollToBlogs()">Learn More</button>
+            <button class="btn btn-our-working" onclick="scrollToWorkings()">Our Working</button>
+        </div><br><br>
+    </section>
+  </div>
+    
+    <script>
+
+window.onscroll = function() { changeNavbarColor() };
+
+function changeNavbarColor() {
+    var navbar = document.querySelector('.navbar');
+    
+    if (window.pageYOffset > 0) {
+        navbar.classList.add('scrolled');
+    } else {
+        navbar.classList.remove('scrolled'); 
+    }
+}
+
+
+document.getElementById('countriesDropdown').addEventListener('click', function() {
+
+            document.querySelector('.kll').scrollIntoView({ behavior: 'smooth' });
+        });
+        function scrollToWorkings() {
+        document.getElementById('workings').scrollIntoView({ behavior: 'smooth' });
+    }
+    function scrollToBlogs() {
+    document.getElementById('blogs-section').scrollIntoView({ behavior: 'smooth' });
+}
+    </script>
+    
+
+<div class="container-fluid custom-container">
+    <div class="left-side">
+      <div class="top-images">
+        <img src="img3.jpeg" alt="Image 1">
+        <img src="img2.jpg" alt="Image 2">
+      </div>
+      <div class="bottom-images">
+        <img src="img4.jpeg" alt="Image 3">
+        <img src="img5.jpeg" alt="Image 4">
+      </div>
+    </div>
+    <div class="right-side">
+        <br><br>
+        <h2>Study Abroad with Us on 100% Scholarship</h2>
+        <p>Take the opportunity to pursue your dreams and earn a 100% scholarship for studying abroad. Join our program and explore top universities with full financial support. Don't miss out on this life-changing opportunity!</p>
+      
+        <div class="icon-description">
+          <div class="icon-item">
+            <i class="fa fa-university" aria-hidden="true"></i>
+            <p>Top Universities</p>
+          </div>
+          <div class="icon-item">
+            <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+            <p>100% Scholarship</p>
+          </div>
+          <div class="icon-item">
+            <i class="fa fa-globe" aria-hidden="true"></i>
+            <p>Global Opportunities</p>
+          </div>
+          <div class="icon-item">
+            <i class="fa fa-handshake" aria-hidden="true"></i>
+            <p>Exclusive Partnerships</p>
+          </div>
+        </div>
+      </div>
+  </div>
+  
+<br><br>
+  <div class="kll">
+    <h2>Discover the Countries Offering 100% Scholarships: Your Path to Free Education Awaits!</h2>
+
+    <p>Imagine studying at some of the world's most prestigious universities of <strong>Spain</strong>, <strong>France</strong>, <strong>Itatly</strong>, <strong>Austria</strong>, <strong>Hungary</strong>and <strong>Lithaounia</strong> without worrying about tuition fees. We bring you an incredible opportunity to pursue your education in top countries that offer 100% scholarships, covering all your expenses. Whether you're passionate about engineering, arts, business, or research, these nations provide a wealth of academic programs to help you achieve your dreams, all while enjoying a rich cultural experience. Take the first step towards a brighter future—these scholarships make global education accessible to students from all walks of life. Explore, apply, and make your academic aspirations a reality with a scholarship that covers everything!</p>
+    
+    <marquee behavior="scroll" direction="left" scrollamount="10">
+    <div class="flag-container">
+      <div class="flag-item">
+        <img src="spain.jpeg" alt="Spain Flag">
+        <p><strong>Spain</strong> is <span style="font-weight: bold;">widely recognized</span> for its rich cultural heritage, vibrant art scene, and prestigious universities, making it a top destination for students and professionals globally.</p>
+<h3>Spain</h3>
+      </div>
+      <div class="flag-item">
+        <img src="italy.jpeg" alt="Italy Flag">
+        <p><strong>Italy</strong> is renowned as the birthplace of some of the <span style="font-weight: bold;">oldest and most prestigious universities</span> in the world, offering centuries of academic excellence and rich cultural history.</p>
+<h3> Italy</h3>
+      </div>
+      <div class="flag-item">
+        <img src="france.jpeg" alt="France Flag">
+        <p><strong>France</strong> is celebrated for its <span style="font-weight: bold;">exceptional education system</span> and cutting-edge research institutions, making it a global leader in innovation and academic achievement.</p>
+<h3>France</h3>
+      </div>
+      <div class="flag-item">
+        <img src="austria.jpeg" alt="Austria Flag">
+        <p><strong>Austria</strong> boasts a <span style="font-weight: bold;">storied academic tradition</span> coupled with state-of-the-art facilities, creating a unique blend of historical excellence and modern innovation in education.</p>
+<h3>Austria</h3>
+      </div>
+      <div class="flag-item">
+        <img src="hungary.jpeg" alt="Hungary Flag">
+        <p><strong>Hungary</strong> offers <span style="font-weight: bold;">affordable yet high-quality education</span>, with a wide range of diverse academic programs that cater to international students seeking a comprehensive educational experience.</p>
+<h3>Hungary</h3>
+      </div>
+      <div class="flag-item">
+        <img src="lithaunia.jpeg" alt="Lithuania Flag">
+        <p><strong>Lithuania</strong> is renowned for its <span style="font-weight: bold;">innovative approach to education</span> and <span style="font-weight: bold;">student-friendly environment</span>, making it an attractive destination for those seeking a supportive and forward-thinking academic experience.</p>
+<h3>Lithuania</h3>
+      </div>
+    </div>
+</marquee>
+  </div>
+<br><br>
+<div class="benefits-section" >
+    <div class="benefits-content" id = "workings">
+      <h2>With Our Consultants, You Can Achieve Your Education Goals.</h2>
+      <div class="benefit-item">
+        <i class="fas fa-video"></i>
+        <div>
+          <h3>Direct Online Guidance</h3>
+          <p>Comprehensive student visa consultancy services for pursuing education abroad.</p>
+        </div>
+      </div>
+      <div class="benefit-item">
+        <i class="fas fa-check-circle"></i>
+        <div>
+          <h3>Hassle-Free Application Process</h3>
+          <p>Seamless and quick process for student visa applications.</p>
+        </div>
+      </div>
+      <div class="benefit-item">
+        <i class="fas fa-graduation-cap"></i>
+        <div>
+          <h3>High Visa Approval Rates</h3>
+          <p>Trusted by students with a remarkable success rate in visa approvals.</p>
+        </div>
+      </div>
+     
+    </div>
+    <div class="benefits-image">
+      <img src="pexels-photo-3184360.webp" alt="Consultant">
+      <div class="highlight-box">
+        <h4>Few Reasons to Choose Us</h4>
+        <p>- Your Success Partner</p>
+      </div>
+    </div>
+  </div>
+  <div class="process-section">
+    <h2>Our Working Process</h2>
+    <p>Follow our step-by-step guide to ensure a seamless journey toward achieving your educational goals abroad.</p>
+
+    <div class="process-step">
+        <i class="fas fa-university"></i>
+        <div class="process-description">
+            <strong>1. Apply to University</strong>
+            <p>We help you research and select the best university based on your career aspirations and preferences. Our team ensures all application forms and required documents are accurately completed and submitted on time.</p>
+        </div>
+    </div>
+
+    <div class="process-step">
+        <i class="fas fa-comments"></i>
+        <div class="process-description">
+            <strong>2. Interview Preparations</strong>
+            <p>Our experienced counselors conduct mock interviews, provide personalized feedback, and help you craft compelling responses to ensure your success.</p>
+        </div>
+    </div>
+
+    <div class="process-step">
+        <i class="fas fa-passport"></i>
+        <div class="process-description">
+            <strong>3. Embassy Interviews and Visa Processing</strong>
+            <p>We provide complete guidance for embassy interviews, including what to expect and how to answer confidently. Additionally, we assist with filling out visa applications and managing supporting documents.</p>
+        </div>
+    </div>
+
+    <div class="process-step">
+        <i class="fas fa-suitcase"></i>
+        <div class="process-description">
+            <strong>4. Pre-Departure Assistance</strong>
+            <p>Our team helps you prepare for travel by offering advice on packing, cultural orientation, and arranging accommodations at your destination.</p>
+        </div>
+    </div>
+
+    <div class="process-step">
+        <i class="fas fa-user-friends"></i>
+        <div class="process-description">
+            <strong>5. Post-Arrival Support</strong>
+            <p>Once you arrive, we continue supporting you by connecting you with local resources and ensuring a smooth transition to university life.</p>
+        </div>
+    </div>
+</div>
+<div id="process-gallery">
+  <div class="process-card">
+    <img src="lo1.png" alt="Apply to University">
+    <div class="overlay">
+      <h3>1. Apply to University</h3>
+    </div>
+    <div class="description">
+      <h3>1. Apply to University</h3>
+      <p>We assist you in applying to your desired university, ensuring all your documents are in order.</p>
+    </div>
+  </div>
+  <div class="process-card">
+    <img src="lo2.png" alt="Interview Preparations">
+    <div class="overlay">
+      <h3>2. Interview Preparations</h3>
+    </div>
+    <div class="description">
+      <h3>2. Interview Preparations</h3>
+      <p>We provide comprehensive interview preparation to help you present your best self.</p>
+    </div>
+  </div>
+  <div class="process-card">
+    <img src="lo3.png" alt="Visa Processing">
+    <div class="overlay">
+      <h3>3. Embassy Interviews and Visa Processing</h3>
+    </div>
+    <div class="description">
+      <h3>3. Embassy Interviews and Visa Processing</h3>
+      <p>We guide you through the embassy interview process and assist with visa applications.</p>
+    </div>
+  </div>
+  <div class="process-card">
+    <img src="lo4.png" alt="Ongoing Support">
+    <div class="overlay">
+      <h3>4. Ongoing Support</h3>
+    </div>
+    <div class="description">
+      <h3>4. Ongoing Support</h3>
+      <p>We offer continuous assistance to help you thrive throughout your academic journey.</p>
+    </div>
+  </div>
+</div>
+
+<br><br>
+<div class="blogs-section" id="blogs-section">
+  <h2 class="center-align">Read our Top Latest Blogs</h2>
+  <div class="blog-container" id="blog-container">
+
+  </div>
+  <button id="previous-blog-button">←</button>
+  <button id="next-blog-button">→</button>
+</div>
+
+<div class="reviews-section">
+  <h2>What Our Students Say</h2>
+  <div id="studentReviewsCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="review-card">
+          <img src="farhan.png" alt="Student 1">
+          <h3>Farhan Ahmad</h3>
+          <p>"Edu Visa Experts made my dream of studying abroad come true. Their team was incredibly supportive and knowledgeable throughout the entire process. From the initial consultation to the final stages of the visa application, they were with me every step of the way, answering all my questions and ensuring that I was fully prepared. I cannot thank them enough for their dedication and for helping me secure my place at a prestigious university abroad. I wholeheartedly recommend them to anyone looking to study overseas!"</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="review-card">
+          <img src="hussnain.PNG" alt="Student 2">
+          <h3>Hussnain Amir</h3>
+          <p>"The team at Edu Visa Experts was incredibly supportive throughout the entire visa process. They went above and beyond to make sure that I was well-informed and confident every step of the way. Their personalized approach, attention to detail, and quick responses to my queries made the whole experience smooth and stress-free. Thanks to their hard work and expertise, I was able to successfully secure my student visa and start my journey toward studying abroad. I highly recommend them to anyone looking for professional and reliable visa assistance!"</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="review-card">
+          <img src="rev2.jpeg" alt="Student 3">
+          <h3>Munazza Khan</h3>
+          <p>"Thanks to Edu Visa Experts, I am now studying at my dream university in France. The team was with me every step of the way, from providing thorough advice on selecting the right university to guiding me through the complex visa application process. They made sure that I had all the necessary documentation and supported me in gathering everything I needed. Their expertise and genuine care for my success gave me the confidence to pursue my studies abroad. I can’t thank them enough for helping me turn my dreams into a reality!"</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#studentReviewsCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#studentReviewsCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</div>
+
+<footer class="footer" id="footer">
+  <div class="container-fluid dff">
+    <div class="footer-content">
+      <div class="logo-tagline">
+        <img src="logo-removebg-preview.png" style="height: 80px;" alt="Edu Visa Experts Logo" class="footer-logo">
+        <p class="tagline">"Turning dreams into reality, one visa at a time."</p>
+      </div>
+    </div>
+    
+      <div class="footer-content">
+        <h3>Contact Us</h3>
+        <ul>
+            <li><strong><i class="fa-solid fa-location-dot"></i>Address:</strong> 123 Edu Visa Street, Study City, Country</li>
+            <li><strong><i class="fa-solid fa-phone"></i>Phone:</strong> +1 (234) 567-8901</li>
+            <li><strong><i class="fa-solid fa-envelope"></i>Email:</strong> info@eduviaexperts.com</li>
+            <li><strong><i class="fa-solid fa-briefcase"></i>Office Hours:</strong> Mon - Fri: 9 AM - 5 PM</li>
+        </ul>
+    </div>
+      <div class="footer-socials">
+          <h3>Follow Us</h3>
+          <ul>
+              <li><a href="https://www.facebook.com/eduviaexperts" target="_blank"><i class="fab fa-facebook-f"></i> Facebook</a></li>
+              <li><a href="https://www.twitter.com/eduviaexperts" target="_blank"><i class="fab fa-twitter"></i> Twitter</a></li>
+              <li><a href="https://www.instagram.com/eduviaexperts" target="_blank"><i class="fab fa-instagram"></i> Instagram</a></li>
+              <li><a href="https://www.linkedin.com/company/eduviaexperts" target="_blank"><i class="fab fa-linkedin-in"></i> LinkedIn</a></li>
+          </ul>
+      </div>
+  </div>
+  <div class="footer-bottom">
+      <p>&copy; 2023 Edu Visa Experts. All rights reserved.</p>
+  </div>
+</footer>
+<script>
+  const blogContainer = document.getElementById('blog-container');
+  const blogs = [
+    {
+      img: 'blog1.jpg',
+      title: 'Step-by-Step Guide to Applying for an Education Visa',
+      author: 'Sofia',
+      authorImg: 'author.jpg',
+      link: 'blog1.html'
+    },
+    {
+      img: 'blog2.jpg',
+      title: 'How to Choose the Best Study Abroad Program for You',
+      author: 'Sofia',
+      authorImg: 'author.jpg',
+      link: 'blog2.html'
+    },
+    {
+      img: 'blog3.jpg',
+      title: 'Visa Approval Success Stories: Learn from Real Students',
+      author: 'Sofia',
+      authorImg: 'author.jpg',
+      link: 'blog3.html'
+    },
+    {
+      img: 'blog4.jpg',
+      title: 'A Beginner’s Guide to Visa Fees and Hidden Costs',
+      author: 'Sofia',
+      authorImg: 'author.jpg',
+      link: 'blog4.html'
+    },
+    {
+      img: 'blog5.jpg',
+      title: 'Education Visa for Online Programs: Is It Possible?',
+      author: 'Sofia',
+      authorImg: 'author.jpg',
+      link: 'blog5.html'
+    },
+    {
+      img: 'blog6.jpg',
+      title: 'Visa Interviews: Dos and Don’ts for International Student',
+      author: 'Sofia',
+      authorImg: 'author.jpg',
+      link: 'blog6.html'
+    },
+    {
+      img: 'blog7.jpg',
+      title: 'Preparing for Life Abroad After Securing Your Education Visa',
+      author: 'Sofia',
+      authorImg: 'author.jpg',
+      link: 'blog7.html'
+    },
+    {
+      img: 'blog8.jpg',
+      title: 'Top Mistakes International Students Make with Their Education Visas',
+      author: 'Sofia',
+      authorImg: 'author.jpg',
+      link: 'blog8.html'
+    },
+    {
+      img: 'blog9.jpg',
+      title: 'Why should you choose us for studying abroad?',
+      author: 'Sofia',
+      authorImg: 'author.jpg',
+      link: 'blog9.html'
+    },
+  ];
+
+  let currentBlogIndex = 0;
+
+  function renderBlogs() {
+    blogContainer.innerHTML = '';
+    for (let i = currentBlogIndex; i < currentBlogIndex + 3 && i < blogs.length; i++) {
+      const blog = blogs[i];
+      const blogPost = document.createElement('a');
+      blogPost.href = blog.link;
+      blogPost.className = 'blog-post';
+      blogPost.style.height = '500px';
+      blogPost.innerHTML = `
+        <img src="${blog.img}" alt="Blog Image" style="width: 100%; height: 250px; object-fit: cover;">
+        <h3>${blog.title}</h3>
+        <div class="author">
+          <img src="${blog.authorImg}" alt="Author Image" style="border-radius: 50%; width: 40px; height: 40px; object-fit: cover;">
+          <span>by ${blog.author}</span>
+        </div>
+        <a href="${blog.link}" class="read-more">Read More <i class="fa-solid fa-chevron-right"></i></a>
+      `;
+      blogContainer.appendChild(blogPost);
+    }
+  }
+
+  document.getElementById('previous-blog-button').addEventListener('click', () => {
+    currentBlogIndex = (currentBlogIndex - 3 + blogs.length) % blogs.length;
+    renderBlogs();
+  });
+
+  document.getElementById('next-blog-button').addEventListener('click', () => {
+    currentBlogIndex = (currentBlogIndex + 3) % blogs.length;
+    renderBlogs();
+  });
+
+  renderBlogs();
+  document.getElementById('scrollToFooterButton').addEventListener('click', function() {
+        document.querySelector('.footer').scrollIntoView({ behavior: 'smooth' });
+    });
+    document.addEventListener('click', function(event) {
+    const navbarToggler = document.querySelector('.navbar-toggler');
+    const navbarCollapse = document.querySelector('.navbar-collapse');
+
+    if (navbarCollapse.classList.contains('show')) {
+
+        if (!event.target.closest('.navbar')) {
+   
+            navbarToggler.click();
+        }
+    }
+});
+
+
+</script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flag-icons/css/flag-icons.min.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</body>
+</html>
